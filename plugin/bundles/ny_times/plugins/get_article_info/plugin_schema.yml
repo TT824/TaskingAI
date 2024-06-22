@@ -1,0 +1,35 @@
+description: i18n:get_article_info_description
+id: get_article_info
+input_schema:
+  begin_date:
+    description: i18n:get_article_info_input_begin_date_description
+    name: i18n:get_article_info_input_begin_date_name
+    required: false
+    type: string
+  end_date:
+    description: i18n:get_article_info_input_end_date_description
+    name: i18n:get_article_info_input_end_date_name
+    required: false
+    type: string
+  page:
+    description: i18n:get_article_info_input_page_description
+    name: i18n:get_article_info_input_page_name
+    required: false
+    type: integer
+  q:
+    description: i18n:get_article_info_input_q_description
+    name: i18n:get_article_info_input_q_name
+    required: true
+    type: string
+name: i18n:get_article_info_name
+output_schema:
+  result:
+    description: i18n:get_article_info_output_result_description
+    name: i18n:get_article_info_output_result_name
+    required: true
+    type: string
+test:
+  cases:
+  - input:
+      q: nba
+  mode: schema

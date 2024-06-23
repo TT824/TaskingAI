@@ -1,0 +1,20 @@
+description: i18n:get_owned_games_description
+id: get_owned_games
+input_schema:
+  steamid:
+    description: i18n:get_owned_games_input_steamid_description
+    name: i18n:get_owned_games_input_steamid_name
+    required: true
+    type: integer
+name: i18n:get_owned_games_name
+output_schema:
+  result:
+    description: i18n:get_owned_games_output_result_description
+    name: i18n:get_owned_games_output_result_name
+    required: true
+    type: string
+test:
+  cases:
+  - input:
+      steamid: 76561199095387949
+  mode: schema
